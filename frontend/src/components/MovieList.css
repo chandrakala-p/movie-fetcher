@@ -1,16 +1,29 @@
-.movie-list {
-  list-style-type: none;
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
 }
 
-.movie-list li {
-  margin: 10px 0;
+.heading{
+  color: #3757b1;
+    font-size: 24px;
+    font-weight: 900;
 }
+
+.movie-list {
+  list-style-type: none;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  gap: 30px;
+}
+
 
 .movie-list li a {
   text-decoration: none;
-  color: #333;
+  color: #201c1c;
   font-size: 18px;
   transition: color 0.3s ease;
 }

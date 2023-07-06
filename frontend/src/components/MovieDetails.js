@@ -18,13 +18,13 @@ export const MovieDetails = () => {
   }
 
   return (
-    <div className="movie-details">
-      <h1>{movie.title}</h1>
-      <p>{movie.description}</p>
-      <p>Director: {movie.director}</p>
-      <p>Genre: {movie.genre}</p>
-      <p>Release Year: {movie.releaseYear}</p>
-    </div>
+      <div className="movie-details">
+        <h1>{movie.title}</h1>
+        <p>Rating: {movie.rating}</p>
+        <p>Director: {movie.director}</p>
+        <p>Genre: {movie.genre}</p>
+        <p>Release Year: {movie.year}</p>
+      </div>
   );
 };
 

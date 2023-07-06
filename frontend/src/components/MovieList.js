@@ -17,13 +17,16 @@ export const MovieList = () => {
   }
 
   return (
-    <ul className="movie-list">
-      {movies.map((movie) => (
-        <li key={movie.id}>
-          <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
-        </li>
-      ))}
-    </ul>
+    <div className="container">
+      <ul className="movie-list">
+        <li className="heading">List of Movies</li>
+        {movies.map((movie) => (
+          <li key={movie.id}>
+            <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
