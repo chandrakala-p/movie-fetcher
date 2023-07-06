@@ -15,6 +15,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/*  provising the redux store to all our components*/}
     <Provider store={store}>
       <App />
     </Provider>

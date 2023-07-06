@@ -1,3 +1,4 @@
+///creating reducer for the action fetch movie
 const moviesReducer = (state = [], action) => {
   switch (action.type) {
     case "FETCH_MOVIES":

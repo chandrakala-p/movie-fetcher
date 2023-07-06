@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Managing the all the routes inside the main component */}
         <Routes>
           <Route path="/" element={<MovieList />} />
           <Route path="/movies/:id" element={<MovieDetails />} />
